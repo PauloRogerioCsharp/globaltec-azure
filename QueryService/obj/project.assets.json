@@ -7575,11 +7575,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\globaltec\\IntegrationGBL\\UAU.Fiscal.QueryService\\UAU.Fiscal.QueryService.csproj",
-      "projectName": "UAU.Fiscal.QueryService",
-      "projectPath": "C:\\projects\\globaltec\\IntegrationGBL\\UAU.Fiscal.QueryService\\UAU.Fiscal.QueryService.csproj",
+      "projectUniqueName": "C:\\projects\\globaltec\\QueryService\\BackGroundSqlQuery.csproj",
+      "projectName": "BackGroundSqlQuery",
+      "projectPath": "C:\\projects\\globaltec\\QueryService\\BackGroundSqlQuery.csproj",
       "packagesPath": "C:\\Users\\paulo\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\globaltec\\IntegrationGBL\\UAU.Fiscal.QueryService\\obj\\",
+      "outputPath": "C:\\projects\\globaltec\\QueryService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7597,11 +7597,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\projects\\globaltec\\IntegrationGBL\\AzureFramework\\AzureFramework.csproj": {
-              "projectPath": "C:\\projects\\globaltec\\IntegrationGBL\\AzureFramework\\AzureFramework.csproj"
+            "C:\\projects\\globaltec\\AzureFramework\\AzureFramework.csproj": {
+              "projectPath": "C:\\projects\\globaltec\\AzureFramework\\AzureFramework.csproj"
             },
-            "C:\\projects\\globaltec\\IntegrationGBL\\Objects\\Objects.csproj": {
-              "projectPath": "C:\\projects\\globaltec\\IntegrationGBL\\Objects\\Objects.csproj"
+            "C:\\projects\\globaltec\\Objects\\Objects.csproj": {
+              "projectPath": "C:\\projects\\globaltec\\Objects\\Objects.csproj"
             }
           }
         }

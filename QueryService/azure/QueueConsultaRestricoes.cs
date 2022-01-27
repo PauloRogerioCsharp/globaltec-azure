@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UAU.Fiscal.Document.Export.objects;
-using AzureFramework;
+using Personal.azure.objects;
+using Personal.azure.keyvault;
+using Personal.azureFramework;
 
-namespace UAU.Fiscal.QueryService.domain
+namespace Personal.azure.queues
 {
     public class QueueConsultaRestricoes : MessageQueue<QueueConsultaRestricoes, List<RestricaoBancoConta>>
     {
         public override string GetConnectionString()
         {
-            return KeyVaultServiceQueues.Get().Configs["conectionstring-queue-query-restricoes"].ToString();
+            return BackGroundSqlQueryKeyVault.Get().Configs["conectionstring-queue-query-restricoes"].ToString();
         }
 
         public override string GetName()
@@ -23,7 +24,7 @@ namespace UAU.Fiscal.QueryService.domain
 
         public override string GetResponseConnectionString()
         {
-            return KeyVaultServiceQueues.Get().Configs["conectionstring-queue-export-restricoes"].ToString();
+            return BackGroundSqlQueryKeyVault.Get().Configs["conectionstring-queue-export-restricoes"].ToString();
         }
 
         public override string GetResponseName()

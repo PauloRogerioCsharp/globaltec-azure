@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qk5y7xG8iP/MUzqVUDGc/Xr9pHXhnmwCinarDPe3wW7wOSrrZX18M9y7avphE8iBHzw6aaYNxJl5rmKPnChFOA==",
+  "dgSpecHash": "cd5tlysbgdCL2h/hX/6AMXLVgES52AiBZdHuryWUHtLxltzSLA8pxhIk+ITUhpPmbEEHOetb1rzgiFEU2MzWQA==",
   "success": true,
-  "projectFilePath": "C:\\projects\\globaltec\\IntegrationGBL\\Objects\\Objects.csproj",
+  "projectFilePath": "C:\\projects\\globaltec\\Objects\\Objects.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

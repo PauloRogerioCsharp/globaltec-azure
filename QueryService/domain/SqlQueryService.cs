@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UAU.Fiscal.Document.Export.objects;
+using Personal.azure.objects;
+using Personal.azure.queues;
 
 namespace UAU.Fiscal.QueryService.domain
 {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/o3IUNvsvqJfYteVqgDfIIaW7JyZ5qbjbES6wOJDnRQcof+20VNoU+Z4fbQASWlSAXqISA+yKw6UkWevL+bY2A==",
+  "dgSpecHash": "zJODOxs11hGh9TDx1w7JMZ5VmVxxMY3mGaO2C/nUVtpJ6OQLttGB6cNMqnN2aJ8dbtfFngBYV5+Jg0/HwcxHpA==",
   "success": true,
-  "projectFilePath": "C:\\projects\\globaltec\\IntegrationGBL\\UAU.Fiscal.QueryService\\UAU.Fiscal.QueryService.csproj",
+  "projectFilePath": "C:\\projects\\globaltec\\QueryService\\BackGroundSqlQuery.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\paulo\\.nuget\\packages\\azure.core\\1.20.0\\azure.core.1.20.0.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\azure.identity\\1.5.0\\azure.identity.1.5.0.nupkg.sha512",

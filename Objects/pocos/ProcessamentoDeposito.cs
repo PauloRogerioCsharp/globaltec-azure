@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UAU.Fiscal.Document.Export.objects
+namespace Personal.azure.objects
 {
     public class ProcessamentoDeposito
     {

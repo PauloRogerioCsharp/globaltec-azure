@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
-using UAU.Fiscal.Document.Export.objects;
-using Personal.AzureFramework;
+using Personal.azure.keyvault;
+using Personal.azure.objects;
+using Personal.azureFramework;
 using UAU.Fiscal.QueryService.domain;
 
 
@@ -30,7 +31,7 @@ namespace UAU.Fiscal.QueryService
 
             List<RestricaoBancoConta> restricoes = new List<RestricaoBancoConta>();
 
-            using (SqlConnection con = new SqlConnection(KeyVaultServiceQueues.Get().Configs["conectionstring-cosmos-exportador-contabil"].ToString()))
+            using (SqlConnection con = new SqlConnection(BackGroundSqlQueryKeyVault.Get().Configs["conectionstring-cosmos-exportador"].ToString()))
             {
                 await con.OpenAsync();
 
@@ -165,7 +166,7 @@ namespace UAU.Fiscal.QueryService
 
             List<ProcessamentoDeposito> depositos = new List<ProcessamentoDeposito>();
 
-            using (SqlConnection con = new SqlConnection(KeyVaultServiceQueues.Get().Configs["conectionstring-cosmos-exportador-contabil"].ToString()))
+            using (SqlConnection con = new SqlConnection(BackGroundSqlQueryKeyVault.Get().Configs["conectionstring-cosmos-exportador"].ToString()))
             {
 
                 await con.OpenAsync();
