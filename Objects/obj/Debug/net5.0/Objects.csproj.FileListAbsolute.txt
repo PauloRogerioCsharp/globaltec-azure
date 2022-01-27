@@ -1,0 +1,11 @@
+C:\projects\globaltec\Objects\obj\Debug\net5.0\Objects.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\globaltec\Objects\obj\Debug\net5.0\Objects.AssemblyInfoInputs.cache
+C:\projects\globaltec\Objects\obj\Debug\net5.0\Objects.AssemblyInfo.cs
+C:\projects\globaltec\Objects\obj\Debug\net5.0\Objects.csproj.CoreCompileInputs.cache
+C:\projects\globaltec\Objects\bin\Debug\net5.0\Objects.deps.json
+C:\projects\globaltec\Objects\bin\Debug\net5.0\Objects.dll
+C:\projects\globaltec\Objects\bin\Debug\net5.0\ref\Objects.dll
+C:\projects\globaltec\Objects\bin\Debug\net5.0\Objects.pdb
+C:\projects\globaltec\Objects\obj\Debug\net5.0\Objects.dll
+C:\projects\globaltec\Objects\obj\Debug\net5.0\ref\Objects.dll
+C:\projects\globaltec\Objects\obj\Debug\net5.0\Objects.pdb
