@@ -11,3 +11,4 @@ C:\projects\globaltec\AzureFramework\obj\Debug\net5.0\AzureFramework.csproj.Core
 C:\projects\globaltec\AzureFramework\obj\Debug\net5.0\AzureFramework.dll
 C:\projects\globaltec\AzureFramework\obj\Debug\net5.0\ref\AzureFramework.dll
 C:\projects\globaltec\AzureFramework\obj\Debug\net5.0\AzureFramework.pdb
+C:\projects\globaltec\AzureFramework\obj\Debug\net5.0\AzureFramework.csproj.AssemblyReference.cache

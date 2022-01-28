@@ -98,19 +98,26 @@ namespace Personal.azureFramework
         /// <param name="name"> Nome da configuração</param>
         /// <returns></returns>
         public string GetConfig( string name) {
-           
-            if (!Configs.ContainsKey(name))
+            
+            string chave = $"{name}";
+
+            if (!String.IsNullOrEmpty(_usuario))
+            {
+                chave = $"{name}-{_usuario}";
+            }
+            if (!Configs.ContainsKey(chave))
             {
                 //se não contem tenta buscar no vault
-                ConfigureKeyVaultByUser(GetKeyVaultName(), new List<string> { name }, _usuario);
-                if (!Configs.ContainsKey(name))
+                ConfigureKeyVaultByUser(GetKeyVaultName(), new List<string> { chave }, "");
+                
+                if (!Configs.ContainsKey(chave))
                 {
                     return "";
                 }
                 
             }
             
-            return Configs[name];
+            return Configs[chave];
         }
 
 
@@ -162,16 +169,18 @@ namespace Personal.azureFramework
             {
                 try
                 {
-                    var r = client.GetSecret(x);
+                    string chave = $"{x}";
+
+                    if (!String.IsNullOrEmpty(usuario))
+                    {
+                        chave = $"{x}-{usuario}";
+                    }
+
+                    var r = client.GetSecret(chave);
 
                     if (r.Value != null)
                     {
-                        string chave = $"{x}";
 
-                        if (!String.IsNullOrEmpty(usuario))
-                        {
-                             chave = $"{x}-{usuario}";
-                        }
                         
                         if (!Configs.ContainsKey(chave))
                         {
