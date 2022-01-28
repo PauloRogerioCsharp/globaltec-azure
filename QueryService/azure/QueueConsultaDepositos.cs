@@ -14,7 +14,7 @@ namespace Personal.azure.queues
     {
         public override string GetConnectionString()
         {
-            return BackGroundSqlQueryKeyVault.Get().Configs["conectionstring-queue-query-depositos"].ToString();
+            return BackGroundSqlQueryKeyVault.Get().GetConfig("conectionstring-queue-query-depositos");
         }
 
         public override string GetName()
@@ -25,12 +25,12 @@ namespace Personal.azure.queues
 
         public override string GetResponseConnectionString()
         {
-            return BackGroundSqlQueryKeyVault.Get().Configs["conectionstring-queue-export-depositos"].ToString();
+            return ExportKeyVault.Get().GetConfig("conectionstring-queue-export-depositos").ToString();
         }
 
         public override string GetResponseName()
         {
-            string name = Environment.GetEnvironmentVariable("QUEUE_CONSULTA_DEPOSITOS_RESPONSE").ToString();
+            string name = Environment.GetEnvironmentVariable("QUEUE_EXPORT_DEPOSITOS_NAME").ToString();
             return name;
         }
     }

@@ -1,0 +1,17 @@
+C:\projects\globaltec\ApplicationAzureServices\bin\Debug\net5.0\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\projects\globaltec\ApplicationAzureServices\bin\Debug\net5.0\Cosmos.CRTCompat.dll
+C:\projects\globaltec\ApplicationAzureServices\bin\Debug\net5.0\ApplicationAzureServices.deps.json
+C:\projects\globaltec\ApplicationAzureServices\bin\Debug\net5.0\ApplicationAzureServices.dll
+C:\projects\globaltec\ApplicationAzureServices\bin\Debug\net5.0\ref\ApplicationAzureServices.dll
+C:\projects\globaltec\ApplicationAzureServices\bin\Debug\net5.0\ApplicationAzureServices.pdb
+C:\projects\globaltec\ApplicationAzureServices\bin\Debug\net5.0\AzureFramework.dll
+C:\projects\globaltec\ApplicationAzureServices\bin\Debug\net5.0\AzureFramework.pdb
+C:\projects\globaltec\ApplicationAzureServices\obj\Debug\net5.0\ApplicationAzureServices.csproj.AssemblyReference.cache
+C:\projects\globaltec\ApplicationAzureServices\obj\Debug\net5.0\ApplicationAzureServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\globaltec\ApplicationAzureServices\obj\Debug\net5.0\ApplicationAzureServices.AssemblyInfoInputs.cache
+C:\projects\globaltec\ApplicationAzureServices\obj\Debug\net5.0\ApplicationAzureServices.AssemblyInfo.cs
+C:\projects\globaltec\ApplicationAzureServices\obj\Debug\net5.0\ApplicationAzureServices.csproj.CoreCompileInputs.cache
+C:\projects\globaltec\ApplicationAzureServices\obj\Debug\net5.0\ApplicationAzureServices.csproj.CopyComplete
+C:\projects\globaltec\ApplicationAzureServices\obj\Debug\net5.0\ApplicationAzureServices.dll
+C:\projects\globaltec\ApplicationAzureServices\obj\Debug\net5.0\ref\ApplicationAzureServices.dll
+C:\projects\globaltec\ApplicationAzureServices\obj\Debug\net5.0\ApplicationAzureServices.pdb

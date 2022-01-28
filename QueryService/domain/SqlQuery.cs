@@ -21,7 +21,7 @@ namespace UAU.Fiscal.QueryService
         /// Consulta todos as restrições de bancos na base sql server
         /// </summary>
         /// <returns></returns>
-        public async Task<List<RestricaoBancoConta>> FindRestricoesAsync()
+        public async Task<List<RestricaoBancoConta>> FindRestricoesAsync(string usuario)
         {
 
             string sql = "           SELECT Empresa_BcoCont, \n"
@@ -31,7 +31,7 @@ namespace UAU.Fiscal.QueryService
 
             List<RestricaoBancoConta> restricoes = new List<RestricaoBancoConta>();
 
-            using (SqlConnection con = new SqlConnection(BackGroundSqlQueryKeyVault.Get().Configs["conectionstring-cosmos-exportador"].ToString()))
+            using (SqlConnection con = new SqlConnection(BackGroundSqlQueryKeyVault.Get(usuario).GetConfig("conectionstring-sql")))
             {
                 await con.OpenAsync();
 
@@ -70,7 +70,7 @@ namespace UAU.Fiscal.QueryService
         /// Consulta todos os depósitos na base sql server
         /// </summary>
         /// <returns></returns>
-        public async Task<List<ProcessamentoDeposito>> FindDepositosByEmpresaAsync(long empresa)
+        public async Task<List<ProcessamentoDeposito>> FindDepositosByEmpresaAsync(long empresa, string usuario)
         {
             string sql = $" \n"
                + "SELECT CASE 0 \n"
@@ -166,7 +166,7 @@ namespace UAU.Fiscal.QueryService
 
             List<ProcessamentoDeposito> depositos = new List<ProcessamentoDeposito>();
 
-            using (SqlConnection con = new SqlConnection(BackGroundSqlQueryKeyVault.Get().Configs["conectionstring-cosmos-exportador"].ToString()))
+            using (SqlConnection con = new SqlConnection(BackGroundSqlQueryKeyVault.Get(usuario).GetConfig("conectionstring-sql")))
             {
 
                 await con.OpenAsync();

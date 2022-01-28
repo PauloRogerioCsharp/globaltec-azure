@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Exporter/1.0.0": {
         "dependencies": {
+          "ApplicationAzureServices": "1.0.0",
           "AzureFramework": "1.0.0",
           "Microsoft.Azure.Cosmos": "3.23.0",
           "Objects": "1.0.0",
@@ -1088,6 +1089,14 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "ApplicationAzureServices/1.0.0": {
+        "dependencies": {
+          "AzureFramework": "1.0.0"
+        },
+        "runtime": {
+          "ApplicationAzureServices.dll": {}
+        }
+      },
       "AzureFramework/1.0.0": {
         "dependencies": {
           "Azure.Identity": "1.5.0",
@@ -1888,6 +1897,11 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "ApplicationAzureServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "AzureFramework/1.0.0": {
       "type": "project",

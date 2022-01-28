@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Objects", "Objects\Objects.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackGroundSqlQuery", "QueryService\BackGroundSqlQuery.csproj", "{A70404C1-AC04-4F24-A036-C323DD7C24A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationAzureServices", "ApplicationAzureServices\ApplicationAzureServices.csproj", "{C20CB6EC-6145-4EEE-84AC-0876A227948D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A70404C1-AC04-4F24-A036-C323DD7C24A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A70404C1-AC04-4F24-A036-C323DD7C24A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A70404C1-AC04-4F24-A036-C323DD7C24A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C20CB6EC-6145-4EEE-84AC-0876A227948D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C20CB6EC-6145-4EEE-84AC-0876A227948D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C20CB6EC-6145-4EEE-84AC-0876A227948D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C20CB6EC-6145-4EEE-84AC-0876A227948D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

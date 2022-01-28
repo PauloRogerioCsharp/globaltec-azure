@@ -50,3 +50,5 @@ C:\projects\globaltec\Exporter\obj\Debug\net5.0\Exporter.dll
 C:\projects\globaltec\Exporter\obj\Debug\net5.0\ref\Exporter.dll
 C:\projects\globaltec\Exporter\obj\Debug\net5.0\Exporter.pdb
 C:\projects\globaltec\Exporter\obj\Debug\net5.0\Exporter.genruntimeconfig.cache
+C:\projects\globaltec\Exporter\bin\Debug\net5.0\ApplicationAzureServices.dll
+C:\projects\globaltec\Exporter\bin\Debug\net5.0\ApplicationAzureServices.pdb

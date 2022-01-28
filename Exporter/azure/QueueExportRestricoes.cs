@@ -12,7 +12,7 @@ namespace Personal.azure.queues
     {
         public override string GetConnectionString()
         {
-            return ExportKeyVault.Get().Configs["conectionstring-queue-export-restricoes"].ToString();
+            return ExportKeyVault.Get().GetConfig("conectionstring-queue-export-restricoes");
         }
 
         public override string GetName()

@@ -23,11 +23,20 @@ namespace UAU.Fiscal.QueryService
             SqlQueryService s = new SqlQueryService();
             while (!stoppingToken.IsCancellationRequested)
             {
-                await s.ReadDepositosAsync();
-                await s.ReadRestricoesAsyn();
+                try
+                {
+                    await s.ReadDepositosAsync(_logger);
+                    await s.ReadRestricoesAsyn(_logger);
 
-                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                await Task.Delay(1000, stoppingToken);
+                    _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+                    await Task.Delay(1000, stoppingToken);
+                }
+                catch (Exception e)
+                {
+                    _logger.LogError(e, e.Message, null);
+                    throw;
+                }
+
             }
         }
     }

@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ApplicationAzureServices\ApplicationAzureServices.csproj" />
     <ProjectReference Include="..\AzureFramework\AzureFramework.csproj" />
     <ProjectReference Include="..\Objects\Objects.csproj" />
   </ItemGroup>

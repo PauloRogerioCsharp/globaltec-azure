@@ -1766,6 +1766,19 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
+      "ApplicationAzureServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AzureFramework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ApplicationAzureServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApplicationAzureServices.dll": {}
+        }
+      },
       "AzureFramework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -6384,6 +6397,11 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
+    "ApplicationAzureServices/1.0.0": {
+      "type": "project",
+      "path": "../ApplicationAzureServices/ApplicationAzureServices.csproj",
+      "msbuildProject": "../ApplicationAzureServices/ApplicationAzureServices.csproj"
+    },
     "AzureFramework/1.0.0": {
       "type": "project",
       "path": "../AzureFramework/AzureFramework.csproj",
@@ -6397,6 +6415,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "ApplicationAzureServices >= 1.0.0",
       "AzureFramework >= 1.0.0",
       "Microsoft.Azure.Cosmos >= 3.23.0",
       "Objects >= 1.0.0",
@@ -6409,11 +6428,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\globaltec\\exporter\\Exporter.csproj",
+      "projectUniqueName": "C:\\projects\\globaltec\\Exporter\\Exporter.csproj",
       "projectName": "Exporter",
-      "projectPath": "C:\\projects\\globaltec\\exporter\\Exporter.csproj",
+      "projectPath": "C:\\projects\\globaltec\\Exporter\\Exporter.csproj",
       "packagesPath": "C:\\Users\\paulo\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\globaltec\\exporter\\obj\\",
+      "outputPath": "C:\\projects\\globaltec\\Exporter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6431,6 +6450,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\projects\\globaltec\\ApplicationAzureServices\\ApplicationAzureServices.csproj": {
+              "projectPath": "C:\\projects\\globaltec\\ApplicationAzureServices\\ApplicationAzureServices.csproj"
+            },
             "C:\\projects\\globaltec\\AzureFramework\\AzureFramework.csproj": {
               "projectPath": "C:\\projects\\globaltec\\AzureFramework\\AzureFramework.csproj"
             },

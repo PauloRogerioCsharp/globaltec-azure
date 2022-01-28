@@ -4,6 +4,65 @@
     "C:\\projects\\globaltec\\QueryService\\BackGroundSqlQuery.csproj": {}
   },
   "projects": {
+    "C:\\projects\\globaltec\\ApplicationAzureServices\\ApplicationAzureServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\globaltec\\ApplicationAzureServices\\ApplicationAzureServices.csproj",
+        "projectName": "ApplicationAzureServices",
+        "projectPath": "C:\\projects\\globaltec\\ApplicationAzureServices\\ApplicationAzureServices.csproj",
+        "packagesPath": "C:\\Users\\paulo\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\globaltec\\ApplicationAzureServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\projects\\globaltec\\AzureFramework\\AzureFramework.csproj": {
+                "projectPath": "C:\\projects\\globaltec\\AzureFramework\\AzureFramework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\projects\\globaltec\\AzureFramework\\AzureFramework.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -157,6 +216,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\projects\\globaltec\\ApplicationAzureServices\\ApplicationAzureServices.csproj": {
+                "projectPath": "C:\\projects\\globaltec\\ApplicationAzureServices\\ApplicationAzureServices.csproj"
+              },
               "C:\\projects\\globaltec\\AzureFramework\\AzureFramework.csproj": {
                 "projectPath": "C:\\projects\\globaltec\\AzureFramework\\AzureFramework.csproj"
               },
