@@ -8,7 +8,7 @@ using Personal.azure.objects;
 
 namespace Personal.azure.queues
 {
-    public class QueueExportRestricoes : MessageQueue<QueueExportRestricoes, List<RestricaoBancoConta>>
+    public class QueueExportRestricoes : MessageQueue<QueueExportRestricoes, RestricaoBancoConta>
     {
         public override string GetConnectionString()
         {
@@ -23,12 +23,13 @@ namespace Personal.azure.queues
 
         public override string GetResponseConnectionString()
         {
-            throw new NotImplementedException();
+            return ExportKeyVault.Get().GetConfig("conectionstring-queue-export-restricoes");
         }
 
         public override string GetResponseName()
         {
-            throw new NotImplementedException();
+            string name = Environment.GetEnvironmentVariable("QUEUE_EXPORT_RESTRICOES_NAME").ToString();
+            return name;
         }
     }
 }

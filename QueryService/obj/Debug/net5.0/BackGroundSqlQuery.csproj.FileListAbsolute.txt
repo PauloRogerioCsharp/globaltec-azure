@@ -86,3 +86,4 @@ C:\projects\globaltec\QueryService\obj\Debug\net5.0\BackGroundSqlQuery.pdb
 C:\projects\globaltec\QueryService\obj\Debug\net5.0\BackGroundSqlQuery.genruntimeconfig.cache
 C:\projects\globaltec\QueryService\bin\Debug\net5.0\ApplicationAzureServices.dll
 C:\projects\globaltec\QueryService\bin\Debug\net5.0\ApplicationAzureServices.pdb
+C:\projects\globaltec\QueryService\bin\Debug\net5.0\System.Linq.Async.dll

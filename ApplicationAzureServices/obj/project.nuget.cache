@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Hokjd18+8Vg9nNBaoGqVNBec9uXOzylBsG/nEl1vckCZgqTiZjn8MjwQh7WYkdZhjDSlWWQAgvd0mUfAJSzhsQ==",
+  "dgSpecHash": "mFeEXuglIO5Rq/yNvbjIcHLaiejFzMXjljE3Xm7+TWJ8bh5JwzwjRlFZxLXVsj9zEC1j/HycXyLxsb9c8NjvNw==",
   "success": true,
   "projectFilePath": "C:\\projects\\globaltec\\ApplicationAzureServices\\ApplicationAzureServices.csproj",
   "expectedPackageFiles": [
@@ -64,6 +64,7 @@
     "C:\\Users\\paulo\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\paulo\\.nuget\\packages\\system.linq.async\\5.1.0\\system.linq.async.5.1.0.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",

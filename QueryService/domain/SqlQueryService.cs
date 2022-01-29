@@ -26,7 +26,10 @@ namespace UAU.Fiscal.QueryService.domain
             SqlQuery query = new SqlQuery();
             if (m != null)
             {
+                var bs = Convert.FromBase64String(m);
+                m = System.Text.Encoding.UTF8.GetString(bs);
                 logger.LogInformation($"Mensagem lida {m}");
+         
                 List<ProcessamentoDeposito> l = await query.FindDepositosByEmpresaAsync(long.Parse(m.Split(":")[0]), m.Split(":")[1]);
 
                 if (l.Count > 0)
@@ -44,11 +47,6 @@ namespace UAU.Fiscal.QueryService.domain
         /// </summary>
         public async Task ReadRestricoesAsyn(ILogger logger) {
 
-            if (_executed)
-            {
-                return;
-            }
-
             var q = QueueConsultaRestricoes.Get();
             var m = await q.GetMessageAsync();
            
@@ -58,6 +56,8 @@ namespace UAU.Fiscal.QueryService.domain
 
             if (m != null)
             {
+                var bs = Convert.FromBase64String(m);
+                m = System.Text.Encoding.UTF8.GetString(bs);
                 logger.LogInformation($"Mensagem lida {m}");
                 List<RestricaoBancoConta> l = await query.FindRestricoesAsync(m);
                 _executed = true;

@@ -115,6 +115,10 @@
             "microsoft.azure.cosmos": {
               "target": "Package",
               "version": "[3.23.0, )"
+            },
+            "system.linq.async": {
+              "target": "Package",
+              "version": "[5.1.0, )"
             }
           },
           "imports": [

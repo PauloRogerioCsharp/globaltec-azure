@@ -9,7 +9,7 @@ using Personal.azure;
 
 namespace Personal.azure.queues
 {
-    public class QueueExportDepositos : MessageQueue<QueueExportDepositos, List<ProcessamentoDeposito>>
+    public class QueueExportDepositos : MessageQueue<QueueExportDepositos,ProcessamentoDeposito>
     {
         public override string GetConnectionString()
         {
@@ -24,12 +24,13 @@ namespace Personal.azure.queues
 
         public override string GetResponseConnectionString()
         {
-            throw new NotImplementedException();
+            return ExportKeyVault.Get().GetConfig("conectionstring-queue-export-depositos");
         }
 
         public override string GetResponseName()
         {
-            throw new NotImplementedException();
+            string name = Environment.GetEnvironmentVariable("QUEUE_EXPORT_DEPOSITOS_NAME").ToString();
+            return name;
         }
     }
 }

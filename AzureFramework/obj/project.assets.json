@@ -901,6 +901,15 @@
           "lib/netstandard1.6/System.Linq.dll": {}
         }
       },
+      "System.Linq.Async/5.1.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.1/System.Linq.Async.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Linq.Async.dll": {}
+        }
+      },
       "System.Linq.Expressions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3765,6 +3774,33 @@
         "system.linq.nuspec"
       ]
     },
+    "System.Linq.Async/5.1.0": {
+      "sha512": "TkDTElj3vvizUnhS4mj0oZW8kX6KOBcsUkj79w/q6IUI7nsW+bXmWZfixknClug/IA+8vTWcArXSjIxn9hIWxQ==",
+      "type": "package",
+      "path": "system.linq.async/5.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/System.Linq.Async.dll",
+        "lib/net461/System.Linq.Async.xml",
+        "lib/netcoreapp3.1/System.Linq.Async.dll",
+        "lib/netcoreapp3.1/System.Linq.Async.xml",
+        "lib/netstandard2.0/System.Linq.Async.dll",
+        "lib/netstandard2.0/System.Linq.Async.xml",
+        "lib/netstandard2.1/System.Linq.Async.dll",
+        "lib/netstandard2.1/System.Linq.Async.xml",
+        "ref/net461/System.Linq.Async.dll",
+        "ref/net461/System.Linq.Async.xml",
+        "ref/netcoreapp3.1/System.Linq.Async.dll",
+        "ref/netcoreapp3.1/System.Linq.Async.xml",
+        "ref/netstandard2.0/System.Linq.Async.dll",
+        "ref/netstandard2.0/System.Linq.Async.xml",
+        "ref/netstandard2.1/System.Linq.Async.dll",
+        "ref/netstandard2.1/System.Linq.Async.xml",
+        "system.linq.async.5.1.0.nupkg.sha512",
+        "system.linq.async.nuspec"
+      ]
+    },
     "System.Linq.Expressions/4.3.0": {
       "sha512": "PGKkrd2khG4CnlyJwxwwaWWiSiWFNBGlgXvJpeO0xCXrZ89ODrQ6tjEWS/kOqZ8GwEOUATtKtzp1eRgmYNfclg==",
       "type": "package",
@@ -6328,7 +6364,8 @@
       "azure.identity >= 1.5.0",
       "azure.security.keyvault.secrets >= 4.2.0",
       "azure.storage.queues >= 12.8.0",
-      "microsoft.azure.cosmos >= 3.23.0"
+      "microsoft.azure.cosmos >= 3.23.0",
+      "system.linq.async >= 5.1.0"
     ]
   },
   "packageFolders": {
@@ -6337,11 +6374,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\globaltec\\AzureFramework\\AzureFramework.csproj",
+      "projectUniqueName": "C:\\projects\\globaltec\\azureframework\\AzureFramework.csproj",
       "projectName": "AzureFramework",
-      "projectPath": "C:\\projects\\globaltec\\AzureFramework\\AzureFramework.csproj",
+      "projectPath": "C:\\projects\\globaltec\\azureframework\\AzureFramework.csproj",
       "packagesPath": "C:\\Users\\paulo\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\globaltec\\AzureFramework\\obj\\",
+      "outputPath": "C:\\projects\\globaltec\\azureframework\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6386,6 +6423,10 @@
           "microsoft.azure.cosmos": {
             "target": "Package",
             "version": "[3.23.0, )"
+          },
+          "system.linq.async": {
+            "target": "Package",
+            "version": "[5.1.0, )"
           }
         },
         "imports": [

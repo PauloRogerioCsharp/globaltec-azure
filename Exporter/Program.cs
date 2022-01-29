@@ -10,6 +10,8 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Threading;
 using Personal.export.domain;
+using Personal.azureFramework;
+using Personal.azure;
 
 namespace integrationgbl
 {
@@ -24,14 +26,15 @@ class Program
         {
             try
             {
-
-                AppService a = new();
+                CosmosbdService.Get().Initialize(  ExportKeyVault.Get().GetConfig("endpoint-cosmos-exportador"), ExportKeyVault.Get().GetConfig("primarykey-cosmos-exportador"));
+                AppService a = new(CosmosbdService.Get());
                 await a.InitializeAsync();
                 while (true)
                 {
                     await a.ReadDepositosAsync();
                     await a.ReadRestricoesAsync();
-                    await Task.Delay(10000);
+                    await Task.Delay(100);
+                    Console.WriteLine($"Dados lidos em {DateTime.Now}");
                 }
 
 

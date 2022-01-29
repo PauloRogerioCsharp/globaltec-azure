@@ -1102,7 +1102,8 @@
           "Azure.Identity": "1.5.0",
           "Azure.Security.KeyVault.Secrets": "4.2.0",
           "Azure.Storage.Queues": "12.8.0",
-          "Microsoft.Azure.Cosmos": "3.23.0"
+          "Microsoft.Azure.Cosmos": "3.23.0",
+          "System.Linq.Async": "5.1.0"
         },
         "runtime": {
           "AzureFramework.dll": {}

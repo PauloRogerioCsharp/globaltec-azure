@@ -125,11 +125,46 @@ namespace Personal.azureFramework
                 
                 string theMessage = retrievedMessage[0].Body.ToString();
                 await _queue.DeleteMessageAsync(retrievedMessage[0].MessageId, retrievedMessage[0].PopReceipt);
-               
+     
                 return theMessage;
             }
 
             return null;
+        }
+
+
+        /// <summary>
+        /// Le toda a fila do azure
+        /// </summary>
+        /// <returns>Uma lista de mensagem</returns>
+        public async Task<List<String>> GetAllMessagesAsync()
+        {
+
+            QueueProperties properties = await _queue.GetPropertiesAsync();
+
+            List<String> messages = new List<string>(properties.ApproximateMessagesCount);
+
+            //Verifica se tem mensagem na fila
+            if (properties.ApproximateMessagesCount > 0)
+            {
+                QueueMessage[] retrievedMessage = await _queue.ReceiveMessagesAsync(_queue.MaxPeekableMessages);
+                List<QueueMessage> l = new(retrievedMessage);
+                
+                
+                await l.ToAsyncEnumerable().ForEachAsync<QueueMessage>( async x =>
+                {
+
+                    messages.Add(x.Body.ToString());
+
+                    await _queue.DeleteMessageAsync(x.MessageId, x.PopReceipt);
+
+                });
+
+
+                
+            }
+
+            return messages;
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jwOeKCW8jKjic3EthLn6wMvBK6rQ9DGLR1m3ZFn5fQCiaqAEh+BStgRGkLHYCsk6pMIYBWSdjRl2R0SetgzNmA==",
+  "dgSpecHash": "KqBsuOH7qguQiFdMp09Ayb6d2Lf5WUr1S7bNaYtj6IqB694n12yXkiwqy1NLPtcVX6q3/XlhqvNBESLxMLJ8qQ==",
   "success": true,
   "projectFilePath": "C:\\projects\\globaltec\\QueryService\\BackGroundSqlQuery.csproj",
   "expectedPackageFiles": [
@@ -96,6 +96,7 @@
     "C:\\Users\\paulo\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\paulo\\.nuget\\packages\\system.linq.async\\5.1.0\\system.linq.async.5.1.0.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\paulo\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",

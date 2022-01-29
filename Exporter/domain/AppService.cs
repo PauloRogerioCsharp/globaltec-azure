@@ -15,9 +15,9 @@ namespace Personal.export.domain
 
 
 
-        public AppService() {
+        public AppService(CosmosbdService cosmos) {
 
-            _cosmos = CosmosbdService.Get();
+            _cosmos = cosmos;
             
         
         }
@@ -44,7 +44,7 @@ namespace Personal.export.domain
 
             await restricoes.ToAsyncEnumerable<RestricaoBancoConta>().ForEachAsync(async x =>
             {
-                await _cosmos.AddItem<RestricaoBancoConta>("depositos", x, x.id);
+                await _cosmos.AddItem<RestricaoBancoConta>("Restricoes", x, x.id);
             });
 
 
@@ -62,7 +62,7 @@ namespace Personal.export.domain
 
             await l.ToAsyncEnumerable<ProcessamentoDeposito>().ForEachAsync(async x =>
             {
-                await _cosmos.AddItem<ProcessamentoDeposito>("depositos", x, x.id);
+                await _cosmos.AddItem<ProcessamentoDeposito>("Depositos", x, x.id);
 
             });
 
@@ -76,14 +76,22 @@ namespace Personal.export.domain
         public async Task ReadDepositosAsync() {
 
             var q = QueueExportDepositos.Get();
-            var m = await q.GetMessageAsync();
+            var lista = await q.GetAllMessagesAsync();
             
-            if (m != null)
+            if (lista.Count>0)
             {
-                List<ProcessamentoDeposito> l = JsonSerializer.Deserialize<List<ProcessamentoDeposito>>(m);
-                if (l.Count>0)
+                List<ProcessamentoDeposito> depositos = new(lista.Count);
+                await lista.ToAsyncEnumerable().ForEachAsync(async m =>
                 {
-                    await ExportDepositosAsync(l);
+                    
+                    ProcessamentoDeposito p = JsonSerializer.Deserialize<ProcessamentoDeposito>(m);
+                    depositos.Add(p);
+
+                });
+                
+                if (depositos.Count>0)
+                {
+                    await ExportDepositosAsync(depositos);
                 }
             }
 
@@ -98,15 +106,24 @@ namespace Personal.export.domain
         /// <returns></returns>
         public async Task ReadRestricoesAsync() {
 
-            var q = QueueExportDepositos.Get();
-            var m = await q.GetMessageAsync();
+            var q = QueueExportRestricoes.Get();
+            var lista = await q.GetAllMessagesAsync();
 
-            if (m != null)
+            if (lista.Count>0)
             {
-                List<RestricaoBancoConta> l = JsonSerializer.Deserialize<List<RestricaoBancoConta>>(m);
-                if (l.Count > 0)
+
+                List<RestricaoBancoConta> restricoes = new(lista.Count);
+                
+                lista.ForEach(m => {
+
+                    restricoes.Add(JsonSerializer.Deserialize<RestricaoBancoConta>(m));
+                
+                });
+
+                
+                if (restricoes.Count > 0)
                 {
-                    await ExportRestricoesAsync(l);
+                    await ExportRestricoesAsync(restricoes);
                 }
             }
 
