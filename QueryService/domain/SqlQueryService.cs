@@ -34,7 +34,12 @@ namespace UAU.Fiscal.QueryService.domain
 
                 if (l.Count > 0)
                 {
-                    await q.InsertResponseMessageAsync(l);
+                    await l.ToAsyncEnumerable().ForEachAsync( async item=> {
+                        
+                        await q.InsertResponseMessageAsync(item);
+
+                    }) ;
+                    
                 }
 
             }
@@ -64,8 +69,12 @@ namespace UAU.Fiscal.QueryService.domain
 
                 if (l.Count > 0)
                 {
-                    await q.InsertResponseMessageAsync(l);
-                    
+                    await l.ToAsyncEnumerable().ForEachAsync(async item => {
+
+                        await q.InsertResponseMessageAsync(item);
+
+                    });
+
                 }
             }
 

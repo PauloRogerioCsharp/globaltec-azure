@@ -10,7 +10,7 @@ using Personal.azure.objects;
 
 namespace Personal.azure.queues
 {
-    public class QueueConsultaDepositos : MessageQueue<QueueConsultaDepositos, List<ProcessamentoDeposito>>
+    public class QueueConsultaDepositos : MessageQueue<QueueConsultaDepositos, ProcessamentoDeposito>
     {
         public override string GetConnectionString()
         {

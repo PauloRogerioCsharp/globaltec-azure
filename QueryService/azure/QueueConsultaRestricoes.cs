@@ -9,7 +9,7 @@ using Personal.azureFramework;
 
 namespace Personal.azure.queues
 {
-    public class QueueConsultaRestricoes : MessageQueue<QueueConsultaRestricoes, List<RestricaoBancoConta>>
+    public class QueueConsultaRestricoes : MessageQueue<QueueConsultaRestricoes, RestricaoBancoConta>
     {
         public override string GetConnectionString()
         {
